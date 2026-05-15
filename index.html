@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Compasso musical - loja de instrumentos musicais </title>
+    <style>
+        .cabeçalhoPrincipal{
+            background-color: #FFFFFF;
+            padding: 1.5rem 1.8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nomeLogo {
+            font-size-adjust:1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .listaNavegacao{
+            display: flex;
+            gap: 2ram;
+        }
+        .linkNav{
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
     <!--Cabeçalho do site-->
-    <header id="header"> 
+    <header id="header" class="cabecalhoPrincipal"> 
         <div id="logo">
-            <h1>compasso musical</h1>
+            <h1 class="nomeLogo">compasso musical</h1>
         </div>
         <nav id="nav">
-            <ul>
+            <ul class="listasNavegacao">
                 <li>
-                    <a href="#">inicio</a>
+                    <a href="#inicio" class="linkNav">inicio</a>
                 </li>
                 <li>
-                    <a href="#">sobre</a>
+                    <a href="#sobre" class="linkNav">sobre</a>
                 </li>
                 <li>
-                    <a href="#">produtos</a>
+                    <a href="#produtos" class="linknav">produtos</a>
                     <li>
-                        <a href="#">depoimentos</a>
+                        <a href="#depoimentos" class="linkNav">depoimentos</a>
                         <li>
-                            <a href="#">contatos</a>
+                            <a href="#contatos" class="linkNav">contatos</a>
                         </li>
                     </li>
                 </li>
@@ -91,7 +113,7 @@
         <a href="#">
 <img src="communication.png" alt="imagem do facebook" width="30">
         </a>
-        <a href="">
+        <a href="#">
             <img src="whatsapp.png" alt="Imagem do whatsapp" width="30">
         </a>
         <div>
