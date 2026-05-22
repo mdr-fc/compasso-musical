@@ -77,6 +77,28 @@
             background-color: #2f4dd3;
             color: #ffffff;
         }
+        .container{
+            padding: 4rem 5%;
+        }
+        .tituloSecao{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: ;
+        }
+        .gradeProdutos{
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cartaoProdutos{
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 400px;
+            box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -127,47 +149,50 @@
     </section>
 
     <!--Seção sobre-->
-    <section id="sobre">
-        <h2>Sobre a Compasso Musical.</h2>
-        <p>
-            Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora 
-            tanto para quem está aprendendo os primeiros acordes quanto para músicos profissionais.
-        </p>
-        <ul>
-            <li>Todos os instrumentos são revisados por nossa equipe técnica.</li>
-        <li>Garantia estendida de fábrica.</li>
-        <li>Suporte e atendimento feito por músicos reais.</li>
-        </ul>
+    <section id="sobre" class="container">
+        <h2 class="titulosecao">Sobre a Compasso Musical.</h2>
+        <div style="800px; margin: 0 auto; text-align: center">
+            <p>
+                Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora 
+                tanto para quem está aprendendo os primeiros acordes quanto para músicos profissionais.
+            </p>
+            <ul style="text-align: left; display: inline-inblock; margin-top: 1rem;" >
+                <li style="margin-bottom: 0.5rem;">Todos os instrumentos são revisados por nossa equipe técnica.</li>
+            <li style="margin-bottom: 0.5rem;">Garantia estendida de fábrica.</li>
+            <li style="margin-bottom: 0.5rem;">Suporte e atendimento feito por músicos reais.</li>
+            </ul>
+        </div>
     </section>
     <!--Produtos-->
-    <section id="produtos">
-        <h2>Catálogo de instrumentos.</h2>
-
-        <article>
-            <h3>Guitarra Elétrica Stratocaster.</h3>
-            <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f" alt="Guitarra Elétrica Stratocaster"
-            width="300"
-        >
-        <p>
-            <strong>Marca:</strong> Fender
-        </p>
-        <p>Guitarra clássica de alta performancel, ideal para rock e blues.</p>
-        <p><em>Preço: R$ 3.500,00</em></p>
-        <a href="#">Adicionar ao Carrinho</a>
-        </article>
-
-        <article>
-            <h3>Bateria Acústica Profissonal.</h3>
-            <img src="https://images.unsplash.com/photo-1738236110252-9230405cd14f" alt="Bateria Acústica Profissonal"
-            width="300"
-        >
-        <p>
-            <strong>Marca:</strong> Pearl
-        </p>
-        <p>Kit com bumbo, caixa, tons, pratos, ferragens e pedal. Som incorpado.</p>
-        <p><em>Preço: R$ 25.000,00</em></p>
-        <a href="#">Adicionar ao Carrinho</a>
-        </article>
+    <section id="produtos" class="container" style="background-color:#eeeeee;">
+        <h2 class="tituloSecao">Catálogo de instrumentos.</h2>
+        <div class="gradeProdutos">
+            <article class="cartaoProdutos">
+                <h3 class="nomeProdutos">Guitarra Elétrica Stratocaster.</h3>
+                <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f" alt="Guitarra Elétrica Stratocaster"
+                width="300"
+            >
+            <p>
+                <strong>Marca:</strong> Fender
+            </p>
+            <p>Guitarra clássica de alta performancel, ideal para rock e blues.</p>
+            <p><em>Preço: R$ 3.500,00</em></p>
+            <a href="#">Adicionar ao Carrinho</a>
+            </article>
+    
+            <article class="cartaoProdutos">
+                <h3 class="nomeProdutos">Bateria Acústica Profissonal.</h3>
+                <img src="https://images.unsplash.com/photo-1738236110252-9230405cd14f" alt="Bateria Acústica Profissonal"
+                width="300"
+            >
+            <p>
+                <strong>Marca:</strong> Pearl
+            </p>
+            <p>Kit com bumbo, caixa, tons, pratos, ferragens e pedal. Som incorpado.</p>
+            <p><em>Preço: R$ 25.000,00</em></p>
+            <a href="#">Adicionar ao Carrinho</a>
+            </article>
+        </div>
     </section>
 
     <!--Seção Depoimentos-->
