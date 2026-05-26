@@ -209,51 +209,60 @@
                 "A bateria chegou super rápido aqui em Cuiabá e perfeitamente embalada. O som 
                 é incrível."
             </p>
-            <footer style="margin-top: 1rem; font-weight: bold;"><cite>- Gael Sinclair</cite></footer>
+            <footer style="margin-top: 1rem; font-weight: bold;"><cite>- Telton Clarysfild</cite></footer>
         </blockquote>
         <br>
         <blockquote style="background:#ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 2px rgba(0,0,0,0.3);">
             <p style="font-style: italic;">
                 "Gostaria de formalizar o recebimento da guitarra, adquirida recentemente em seu estabelecimento.É com satisfação que informo que o instrumento foi entregue em perfeitas condições, apresentando integridade estrutural e estética impecáveis. O processo de embalagem demonstrou extremo zelo, garantindo que o produto chegasse ao destino sem qualquer avaria decorrente do transporte. Além disso, os prazos logísticos acordados foram rigorosamente respeitados.Expresso meu reconhecimento pelo profissionalismo e pela excelência no atendimento prestado. Reitero minha confiança em sua empresa para futuras transações comerciais."
             </p>
-            <footer style="margin-top: 1rem; font-weight: bold ;">- <cite>Ravi Fontenelle</cite></footer>
+            <footer style="margin-top: 1rem; font-weight: bold ;"> <cite>- Richard Bones</cite></footer>
         </blockquote>
     </section>
     <!--Seção Contato-->
-    <section id="contato">
-        <h2>Fale Conosco</h2>
-        <p>
-            Tem dúvidas sobre algum instrumento? Entre em contato com a nossa equipe ou venha nos visitar.
-        </p>
-        <address>
-            <p>
-                <strong>Loja Física: </strong>Jardim Itália, Cuiabá - MT
+    <section id="contato" class="container" style="background-color: #eceff1;">
+        <h2 class="tituloSecao">Fale Conosco</h2>
+        <div style="max-width: 600px;margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 10px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)">
+            <p style="text-align: center; margin-bottom: 2rem;">
+                Tem dúvidas sobre algum instrumento? Entre em contato com a nossa equipe ou venha nos visitar.
             </p>
-        </address>
-        <form action="#">
-            <label for="nome">Nome Completo:</label>
-            <br>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome"required>
-            <br><br>
-            <label for="email">E-mail</label>
-            <br>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail"required>
-            <br><br>
-            <label for="departamento">Departamento</label>
-            <br>
-            <select name="departamento" id="departamento">
-                <option value="vendas">vendas</option>
-                <option value="suporte">Suporte Técnico</option>
-                <option value="financeiro">Financeiro</option>
-                <option value="susgestão">Sugestões</option>
-            </select>
-            <br><br>
-            <label for="mensagem">Mensagem</label>
-            <br>
-            <textarea name="mensagem" id="mensagem" rows="10"></textarea>
-            <br><br>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
+            <address style="text-align: center; margin-bottom: 2rem;">
+                <p>
+                    <strong>Loja Física: </strong>Jardim Itália, Cuiabá - MT
+                </p>
+            </address >
+            <form action="#">
+                <label for="nome" style="font-weight: bold;">Nome Completo:</label>
+                <br>
+                <input 
+                type="text" 
+                name="nome" 
+                id="nome" 
+                placeholder="Digite seu nome"
+                required 
+                style="width: 100%;padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                
+                <label for="email" style="font-weight: bold;">E-mail</label>
+                
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="Digite seu e-mail"
+                required 
+                style="width: 100%;padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                <label for="departamento" style="font-weight: bold;">Departamento</label>
+                <select name="departamento" id="departamento" style="width: 100%;padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                    <option value="vendas">vendas</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="susgestão">Sugestões</option>
+                </select>
+                <label for="mensagem" style="font-weight: bold;">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="10" style="width: 100%;padding: 0.8rem; margin: 0.5rem 0 1.5rem 0; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
+                <button type="submit" class="botaoPrincipal" style="width: 100%; border: none; cursor: pointer;">Enviar Mensagem</button>
+            </form>
+        </div>
     </section>
 </main>
 
