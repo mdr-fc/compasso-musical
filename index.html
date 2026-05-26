@@ -64,17 +64,17 @@
             color: #d32f2f;
         }
 
-        .botaoprincipal {
+        .botaoPrincipal {
             display: inline-block;
-            background-color: #d33636;
+            background-color: #333333;
             color: #ffffff;
             padding: 0.8rem;
             border-radius: 4px;
             font-weight: bold;
             margin-top: 1rem;
         }
-        .botaoprincipal:hover{
-            background-color: #2f4dd3;
+        .botaoPrincipal:hover{
+            background-color: #102065;
             color: #ffffff;
         }
         .container{
@@ -98,6 +98,10 @@
             width: 400px;
             box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.5);
             text-align: center;
+            transition: transform 0.3 ease
+        }
+        .cartaoProdutos:hover {
+            transform: translateY(-5px)
         }
     </style>
 </head>
@@ -145,7 +149,7 @@
     rgba(0, 0, 0, 0.5);"
     >
     <br>
-    <a href="#" class="botaoprincipal"style="font-size: 1.2em;padding: 1rem 2rem;">ver nossas ofertas</a>
+    <a href="#" class="botaoPrincipal"style="font-size: 1.2em;padding: 1rem 2rem;">ver nossas ofertas</a>
     </section>
 
     <!--Seção sobre-->
@@ -171,46 +175,48 @@
                 <h3 class="nomeProdutos">Guitarra Elétrica Stratocaster.</h3>
                 <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f" alt="Guitarra Elétrica Stratocaster"
                 width="300"
+                style="border-radius: 4px;margin-bottom: 1rem;"
             >
             <p>
                 <strong>Marca:</strong> Fender
             </p>
             <p>Guitarra clássica de alta performancel, ideal para rock e blues.</p>
-            <p><em>Preço: R$ 3.500,00</em></p>
-            <a href="#">Adicionar ao Carrinho</a>
+            <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;"><em>Preço: R$ 3.500,00</em></p>
+            <a href="#" class="botaoPrincipal">Adicionar ao Carrinho</a>
             </article>
     
             <article class="cartaoProdutos">
                 <h3 class="nomeProdutos">Bateria Acústica Profissonal.</h3>
-                <img src="https://images.unsplash.com/photo-1738236110252-9230405cd14f" alt="Bateria Acústica Profissonal"
+                <img  src=
                 width="300"
+                style="border-radius: 4px;margin-bottom: 1rem;"
             >
             <p>
                 <strong>Marca:</strong> Pearl
             </p>
             <p>Kit com bumbo, caixa, tons, pratos, ferragens e pedal. Som incorpado.</p>
-            <p><em>Preço: R$ 25.000,00</em></p>
-            <a href="#">Adicionar ao Carrinho</a>
+            <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;"><em>Preço: R$ 25.000,00</em></p>
+            <a href="#" class="botaoPrincipal">Adicionar ao Carrinho</a>
             </article>
         </div>
     </section>
 
     <!--Seção Depoimentos-->
-    <section id="depoimentos">
-        <h2>O que nossos clientes dizem</h2>
-        <blockquote>
+    <section id="depoimentos" class="container">
+        <h2 class="tituloSecao">O que nossos clientes dizem</h2>
+        <blockquote style="background:#ffffff;padding: 2rem;border-left:  5px solid #d32f2f; box-shadow: 0 2px 5px rgba(0,0,0,0.3)">
             <p>
                 "A bateria chegou super rápido aqui em Cuiabá e perfeitamente embalada. O som 
                 é incrível."
             </p>
-            <footer><cite>- Gael Sinclair</cite></footer>
+            <footer style="margin-top: 1rem; font-weight: bold;"><cite>- Gael Sinclair</cite></footer>
         </blockquote>
         <br>
-        <blockquote>
-            <p>
+        <blockquote style="background:#ffffff; padding: 2rem; border-left: 5px solid #d32f2f; box-shadow: 0 2px rgba(0,0,0,0.3);">
+            <p style="font-style: italic;">
                 "Gostaria de formalizar o recebimento da guitarra, adquirida recentemente em seu estabelecimento.É com satisfação que informo que o instrumento foi entregue em perfeitas condições, apresentando integridade estrutural e estética impecáveis. O processo de embalagem demonstrou extremo zelo, garantindo que o produto chegasse ao destino sem qualquer avaria decorrente do transporte. Além disso, os prazos logísticos acordados foram rigorosamente respeitados.Expresso meu reconhecimento pelo profissionalismo e pela excelência no atendimento prestado. Reitero minha confiança em sua empresa para futuras transações comerciais."
             </p>
-            <footer>- <cite>Ravi Fontenelle</cite></footer>
+            <footer style="margin-top: 1rem; font-weight: bold ;">- <cite>Ravi Fontenelle</cite></footer>
         </blockquote>
     </section>
     <!--Seção Contato-->
