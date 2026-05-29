@@ -83,7 +83,7 @@
         .tituloSecao{
             text-align: center;
             font-size: 2.5rem;
-            margin-bottom: ;
+            margin-bottom: 2rem;
         }
         .gradeProdutos{
             display: flex;
@@ -98,11 +98,25 @@
             width: 400px;
             box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.5);
             text-align: center;
-            transition: transform 0.3 ease
+            transition: transform 0.3 ease;
         }
         .cartaoProdutos:hover {
             transform: translateY(-5px)
         }
+        .rodapePrincipal{
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .rodapePrincipal h2,
+        .rodapePrincipal h3{
+            color: #ffffff;
+        }
+
     </style>
 </head>
 <body>
@@ -187,7 +201,7 @@
     
             <article class="cartaoProdutos">
                 <h3 class="nomeProdutos">Bateria Acústica Profissonal.</h3>
-                <img  src=
+                <img  src=bateria.jpg
                 width="300"
                 style="border-radius: 4px;margin-bottom: 1rem;"
             >
@@ -228,7 +242,7 @@
             </p>
             <address style="text-align: center; margin-bottom: 2rem;">
                 <p>
-                    <strong>Loja Física: </strong>Jardim Itália, Cuiabá - MT
+                    <strong>Loja Física: </strong>Jardim cuiabá, Cuiabá - MT
                 </p>
             </address >
             <form action="#">
@@ -268,74 +282,82 @@
 
 
 <!-- Rodapé do Site-->
-<footer id="footer">
-    <div>
-        <h2>Compasso Muical</h2>
+<footer id="footer" class="rodapePrincipal">
+    <div style="flex: 1; min-width: 250px;">
+        <h2 class="nomeLogo">Compasso Muical</h2>
         <p>Desde 2026 conectando pessoas atrevés da musica</p>
     </div>
     
-<nav>
-<ul>
+<nav style="flex: 1;min-width: 150px;">
+<h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block;">Navegação</h3>
+<ul style="margin-top: 1rem; line-height: 2;">
             <li>
-                <a href="#">Início</a>
+                <a href="#" class="linkNav">Início</a>
             </li>
             <li>
-                <a href="#">Sobre</a>
+                <a href="#" class="linkNav">Sobre</a>
             </li>
             <li>
-                <a href="#">Produtos</a>
+                <a href="#" class="linkNav">Produtos</a>
             </li>
             <li>
-                <a href="#">Depoimentos</a>
+                <a href="#"class="linkNav">Depoimentos</a>
             </li>
             <li>
-                <a href="#">Contato</a>
+                <a href="#"class="linkNav">Contato</a>
             </li>
         </ul>
     </nav>
 
-    <nav>
-        <h3>Informações</h3>
+    <nav style="flex: 1;min-width: 150px;">
+        <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block;">Informações</h3>
         <ul>
         <li>
-            <a href="#">termos de uso</a>
+            <a href="#" class="linkNav">termos de uso</a>
         </li>
         <li>
-            <a href="#">politica de privacidade</a>
+            <a href="#" class="linkNav">politica de privacidade</a>
         </li>
         <li>
-            <a href="#">trocas e devoluções</a>
+            <a href="#" class="linkNav">trocas e devoluções</a>
         </li>
         </ul>
     </nav>
 
-    <div>
-        <h3>Siga-nos</h3>
-        <div>
+
+    <div style="flex: 1;min-width: 150px;">
+        <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display:">Siga-nos</h3>
+        <div style="display: flex; gap: 1rem;">
             <a href="#">
-                <img src="instagram.png" alt="Imagem do Instagram" width="30">
+                <img src="instagram.png" alt="Imagem do Instagram" width="35">
             </a>
             <a href="#">
-                <img src="communication.png"Imagem do facebook width="30">
+                <img src="communication.png"Imagem do facebook width="35">
             </a>
             <a href="#">
-                <img src="whatsapp.png" alt="Imagem do Whatsapp" width="30">
+                <img src="whatsapp.png" alt="Imagem do Whatsapp" width="35">
             </a>
         </div>
     </div>
     
-    <div>
-        <h3>Newsletter</h3>
-        <p>
+    <div style="flex: 1;min-width: 250px;">
+        <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block;">Newsletter</h3>
+        <p style="margin-top: 1rem;">
             Receba promoções exclusivas no seu e-mail:
         </p>
-        <form>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-            <button type="submit">Assinar</button>
+        <form style="display: flex; margin-top: 1rem;">
+            <input type="email"
+            name="email" 
+            id="email" 
+            placeholder="Digite seu e-mail"
+            style="padding: 0.8rem; border: none; border-radius:  4px 0 0 4px; outline: width: 70%;"
+            />
+            
+            <button type="submit" class="botaoPrincipal" style="margin-top: 0; border-radius: 0 4px 0;border: none; cursor: pointer">Assinar</button>
         </form>
     </div>
 
-    <div>
+    <div style="width: 100%;text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid;">
         <p>
             Copyrigth &copy;2026 compasso musical - todos os direitos reservados. site desenvolvido por Ricardo Medeiros Francisco
         </p>
